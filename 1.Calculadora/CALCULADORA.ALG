@@ -1,8 +1,12 @@
 algoritmo "CALCULADORA"
+//  
+//  
 var
-   n,n1,n2:inteiro
+   n,n1,n2:real
    
-procedimento adicao(a,b:inteiro)
+//ADIÇÃO
+
+procedimento adicao(a,b:real)
 var
    soma:inteiro
 inicio
@@ -10,12 +14,44 @@ inicio
     Escreva(a,"+",b,"=",soma)
 fimprocedimento
 
-procedimento sub(a,b:inteiro)
+//SUBTRAÇÃOO
+
+procedimento sub(a,b:real)
 var
    subtracao:real
 inicio
     subtracao<-(a-b)
     Escreva(a,"-",b,"=",subtracao)
+fimprocedimento
+
+//MULTIPLICAÇAO
+
+procedimento mul(a,b:real)
+var
+   multiplicacao:real
+inicio
+    multiplicacao<-(a*b)
+    Escreva(a,"*",b,"=",multiplicacao)
+fimprocedimento
+
+//DIVISÃO
+
+procedimento di(a,b:real)
+var
+   divisao:real
+inicio
+    divisao<-(a/b)
+    Escreva(a,"/",b,"=",divisao)
+fimprocedimento
+
+//PORCENTAGEM
+
+procedimento por(a,b:real)
+var
+   porcentagem:real
+inicio
+    porcentagem<-a*b/100
+    Escreva(b,"% de",a,"=",porcentagem)
 fimprocedimento
 
 inicio
@@ -35,25 +71,40 @@ inicio
        adicao(n1,n2)
    senão
        se(n=2)então
-       Escreva("Digite o minuendo :")
-       leia(n1)
-       Escreva("Digite o subtração :")
-       leia(n2)
-       sub(n1,n2)
+           Escreva("Digite o minuendo :")
+           leia(n1)
+           Escreva("Digite o subtração :")
+           leia(n2)
+           sub(n1,n2)
        senão
            se(n=3)então
+               Escreva("Digite digite o primeiro fator :")
+               leia(n1)
+               Escreva("Digite o segundo fato :")
+               leia(n2)
+               mul(n1,n2)
            senão
                se(n=4)então
+                   Escreva("Digite digite o dividendo:")
+                   leia(n1)
+                   Escreva("Digite o divisor :")
+                   leia(n2)
+                   di(n1,n2)
                senão
                    se(n=5)então
+                      Escreva("Digite digite o valor total:")
+                      leia(n1)
+                      Escreva("Digite o percentual :")
+                      leia(n2)
+                      por(n1,n2)
                    senão
                        se(n=0)então
+                          Escreva("Ok, você encerrou")
                        senão
-                           Escreva("Valor inválido")
+                          Escreval("Valor inválido")
                        fimse
                    fimse
                fimse
            fimse
        fimse
-   fimse
 fimalgoritmo
