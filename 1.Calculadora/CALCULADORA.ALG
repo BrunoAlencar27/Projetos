@@ -3,6 +3,8 @@ algoritmo "CALCULADORA"
 //
 //
 //
+//
+//
 var
    n,n1,n2:real
    c:caractere
@@ -81,51 +83,53 @@ inicio
 fimprocedimento
 
 inicio
-   interface()
-   escolha n
-   caso 1
-      Escreval("")
-      Escreval("--------OPERAÇÃO--------")
-      Escreva("Digite a primeira parcela:")
-      leia(n1)
-      Escreva("Digite a segunda parcela:")
-      leia(n2)
-      adicao(n1,n2)
-   caso 2
-      Escreval("")
-      Escreval("--------OPERAÇÃO--------")
-      Escreva("Digite o minuendo :")
-      leia(n1)
-      Escreva("Digite o subtração :")
-      leia(n2)
-      sub(n1,n2)
-   caso 3
-      Escreval("")
-      Escreval("--------OPERAÇÃO--------")
-      Escreva("Digite digite o primeiro fator :")
-      leia(n1)
-      Escreva("Digite o segundo fato :")
-      leia(n2)
-      mul(n1,n2)
-   caso 4
-      Escreval("")
-      Escreval("--------OPERAÇÃO--------")
-      Escreva("Digite digite o dividendo:")
-      leia(n1)
-      Escreva("Digite o divisor :")
-      leia(n2)
-      di(n1,n2)
-   caso 5
-      Escreval("")
-      Escreval("--------OPERAÇÃO--------")
-      Escreva("Digite digite o valor total:")
-      leia(n1)
-      Escreva("Digite o percentual :")
-      leia(n2)
-      por(n1,n2)
-   caso 0
-      Escreva("Ok, você saiu")
-   outrocaso
-      Escreval("Valor inválido")
-   fimescolha
+   repita
+      interface()
+      escolha n
+      caso 1
+         Escreval("")
+         Escreval("--------OPERAÇÃO--------")
+         Escreva("Digite a primeira parcela:")
+         leia(n1)
+         Escreva("Digite a segunda parcela:")
+         leia(n2)
+         adicao(n1,n2)
+      caso 2
+         Escreval("")
+         Escreval("--------OPERAÇÃO--------")
+         Escreva("Digite o minuendo :")
+         leia(n1)
+         Escreva("Digite o subtração :")
+         leia(n2)
+         sub(n1,n2)
+      caso 3
+         Escreval("")
+         Escreval("--------OPERAÇÃO--------")
+         Escreva("Digite digite o primeiro fator :")
+         leia(n1)
+         Escreva("Digite o segundo fato :")
+         leia(n2)
+         mul(n1,n2)
+      caso 4
+         Escreval("")
+         Escreval("--------OPERAÇÃO--------")
+         Escreva("Digite digite o dividendo:")
+         leia(n1)
+         Escreva("Digite o divisor :")
+         leia(n2)
+         di(n1,n2)
+      caso 5
+         Escreval("")
+         Escreval("--------OPERAÇÃO--------")
+         Escreva("Digite digite o valor total:")
+         leia(n1)
+         Escreva("Digite o percentual :")
+         leia(n2)
+         por(n1,n2)
+      caso 0
+         Escreva("Ok, você saiu")
+      outrocaso
+         Escreval("VALOR INVÁLIDO :(")
+      fimescolha
+   ate(n=0)
 fimalgoritmo
