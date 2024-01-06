@@ -1,13 +1,6 @@
 algoritmo "CALCULADORA"
-//
-//
-//
-//
-//
-//
 var
    n,n1,n2:real
-   c:caractere
 
 procedimento interface()
 inicio
