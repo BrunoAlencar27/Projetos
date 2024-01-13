@@ -1,4 +1,7 @@
 algoritmo "CALCULADORA"
+//Projeto:calculadora básica funcional por linha da comando estrita em pseudocóigo.
+//Autor:Bruno Alencar Alves
+//Data de criação:14/01/24
 var
    n,n1,n2:real
 
@@ -11,18 +14,8 @@ inicio
    Escreval("[4]PARA DIVISÃO")
    Escreval("[5]PARA PORCENTAGEM")
    Escreval("[0]PARA SAIR")
-   Escreva("Digite o número:")
+   Escreva("Digite um número:")
    leia(n)
-fimprocedimento
-
-procedimento interface2()
-inicio
-   Escreval("")
-   Escreval("--------OPERAÇÃO--------")
-   Escreva("Digite a primeira parcela:")
-   leia(n1)
-   Escreva("Digite a segunda parcela:")
-   leia(n2)
 fimprocedimento
 
 //ADIÇÃO
@@ -38,7 +31,7 @@ inicio
    Escreval("")
 fimprocedimento
 
-//SUBTRAÇÃOO
+//SUBTRAÇÃO
 
 procedimento sub(a,b:real)
 var
@@ -51,7 +44,7 @@ inicio
    Escreval("")
 fimprocedimento
 
-//MULTIPLICAÇAO
+//MULTIPLICAÇÃO
 
 procedimento mul(a,b:real)
 var
@@ -95,19 +88,34 @@ inicio
       interface()
       escolha n
       caso 1
-         interface2()
+         Escreva("Digite a primeira parcela:")
+         leia(n1)
+         Escreva("Digite a segunda parcela:")
+         leia(n2)
          adicao(n1,n2)
       caso 2
-         interface2()
+         Escreva("Digite o subtraendo:")
+         leia(n1)
+         Escreva("Digite o minuendo:")
+         leia(n2)
          sub(n1,n2)
       caso 3
-         interface2()
+         Escreva("Digite o primeiro produto:")
+         leia(n1)
+         Escreva("Digite o segundo produto:")
+         leia(n2)
          mul(n1,n2)
       caso 4
-         interface2()
+         Escreva("Digite o dividendo:")
+         leia(n1)
+         Escreva("Digite o divisor:")
+         leia(n2)
          di(n1,n2)
       caso 5
-         interface2()
+         Escreva("Digite o valor toral:")
+         leia(n1)
+         Escreva("Digite o percentual:")
+         leia(n2)
          por(n1,n2)
       caso 0
          Escreva("Ok, você saiu")
