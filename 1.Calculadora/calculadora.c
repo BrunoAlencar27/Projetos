@@ -1,3 +1,6 @@
+//Projeto:calculadora básica funcional por linha da comando escrita em C.
+//Autor:Bruno Alencar Alves
+//Data de criação:14/01/24
 #include <stdio.h>//biblioteca básica
 #include <stdlib.h>//biblioteca para a função "limpatela"
   float n1,n2;

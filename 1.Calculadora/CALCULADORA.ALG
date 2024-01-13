@@ -1,5 +1,5 @@
 algoritmo "CALCULADORA"
-//Projeto:calculadora básica funcional por linha da comando estrita em pseudocóigo.
+//Projeto:calculadora básica funcional por linha da comando escrita em pseudocóigo.
 //Autor:Bruno Alencar Alves
 //Data de criação:14/01/24
 var
